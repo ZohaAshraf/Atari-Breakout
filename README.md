@@ -3,56 +3,56 @@
 A complete recreation of Atari Breakout written entirely in 8086 NASM assembly, running as a 16-bit DOS .com executable.
 Features smooth paddle movement, accurate ball physics, layered brick durability, PC-speaker sound effects, and fully text-mode graphics.
 
-_**Gameplay Demo**_
+## Gameplay Demo
 
 https://github.com/user-attachments/assets/0192aea9-27df-48da-b9cb-6bfba1c0de7f
 
-_**Key Features**_
+## Key Features
 
-_Pure x86 NASM Assembly_
+### Pure x86 NASM Assembly
 - hand-written real-mode assembly
 - no external libraries
 - runs in DOSBox
 - pure .COM format (ORG 0100h)
 
-_**Menu & UI System**_
+### Menu & UI System
 - main menu (Play / Instructions / Exit)
 - instructions page
 - clean ASCII borders and text rendering
 
-_**Real Ball Physics**_
+### Real Ball Physics
 - Wall bounce
 - paddle bounce with angle zones
 - brick collision detection
 - variable direction changes
 - frame-based movement timing
 
- _**Brick Durability System**_
+ ### Brick Durability System
 - Top row → 2 hits
 - All other rows → 1 hit
 
-_**PC-Speaker Sound Effects**_
-_Distinct tones for:_
+### PC-Speaker Sound Effects
+#### Distinct tones for:
 - Brick hit
 - Paddle hit
 - Wall bounce
 - life lost
 - Win sound
 
- _**Retro Text-Mode Graphics**_
+ ### Retro Text-Mode Graphics
 - fast memory-mapped VGA text rendering
 - smooth paddle animation
 - border and layout system
 
- _**DOSBox Optimized**_
+ ### DOSBox Optimized
 - Stable timing
 - Responsive input
 
- _**Dependencies**_
+ ### Dependencies
 - DOSBox
 - NASM assembler
 
- _**Building From Source**_
+ ### Building From Source
  
 Clone the repository:
 
@@ -66,13 +66,13 @@ Compile using NASM:
     nasm p.asm -f bin -o break.com
 That's it — no TASM, no TLINK required.
 
-_**Playing the Game**_
+### Playing the Game
 
 From inside DOSBox, run:
  
      test.com
 
-_**## Controls**_
+## Controls
 
 | Command                       | Keybind        |
 |-------------------------------|----------------|
@@ -80,22 +80,22 @@ _**## Controls**_
 | Move Left                     | ← (Left Arrow)  |
 | Pause / Quit                  | Escape         |
 
-_**How to Play**_
+## How to Play
 - The ball launches automatically
 - Hit bricks to destroy them
 - Missing the ball costs 1 life
 - Game over when lives = 0
 - Press Space to restart anytime
 
- _**About the Project**_
+ ## About the Project
  
-_This project demonstrates:_
+### This project demonstrates:
 - BIOS keyboard input
 - PC-speaker tones
 - VGA text-mode rendering
 - Physics in pure assembly
 - Efficient low-level game logic
 
- _**License**_
+ ## License
  
 MIT License
