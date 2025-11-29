@@ -51,5 +51,6 @@ Hit the bricks with the ball to destroy them.
 If you miss the ball and it goes below the paddle, the game ends.
 When all bricks are removed, you win and a victory sound is played.
 
-                                               **GamePlay Demo:**
+                                               **GamePlay Demo:**                      
 [ATARI BREAKOUT GAME.docx](https://github.com/user-attachments/files/23831877/ATARI.BREAKOUT.GAME.docx)
+(https://github.com/user-attachments/files/23831895/ATARI.BREAKOUT.GAME.docx)
