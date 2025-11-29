@@ -1,4 +1,4 @@
-**Atari Breakout — x86 NASM Edition**
+# Atari Breakout — x86 NASM Edition
 
 A complete recreation of Atari Breakout written entirely in 8086 NASM assembly, running as a 16-bit DOS .com executable.
 Features smooth paddle movement, accurate ball physics, layered brick durability, PC-speaker sound effects, and fully text-mode graphics.
