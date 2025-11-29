@@ -18,6 +18,7 @@ Entire game written from scratch using real-mode assembly.
 1) Top row bricks require 2 hits
 2) Remaining rows require 1 hit
 
+
                                               **PC-Speaker sound effects:**
 Distinct tones for:
 Brick destroyed
@@ -42,10 +43,13 @@ Right Arrow **→** Move paddle right
 ESC **→** Quit the game
 
                                                   **Objective:**
-Break all the bricks without letting the ball fall below your paddle.
+Break all the bricks without letting the ball fall below your paddle.   
 
                                               **How Gameplay Works:**
 The ball launches automatically and begins moving across the screen.
 Hit the bricks with the ball to destroy them.
 If you miss the ball and it goes below the paddle, the game ends.
 When all bricks are removed, you win and a victory sound is played.
+
+                                               **GamePlay Demo:**
+[ATARI BREAKOUT GAME.docx](https://github.com/user-attachments/files/23831877/ATARI.BREAKOUT.GAME.docx)
