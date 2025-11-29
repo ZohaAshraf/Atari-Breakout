@@ -1,27 +1,42 @@
-# Atari-Breakout
-Atari Breakout recreated entirely in x86 NASM assembly and compiled as a DOS .com executable. The game runs smoothly inside DOSBox with full paddle movement, brick collision detection, layered brick durability, and PC-speaker sound effects for hits, wall bounces, life loss, and victory. This project demonstrates low-level game logic, input handling, real-time ball physics, and text-mode rendering in assembly. Includes full source code, build instructions, screenshots, and a gameplay demo video.
+**Atari Breakout — x86 Assembly (NASM, DOS .COM)**
 
-🎮 Key Features
+A complete recreation of Atari Breakout written entirely in x86 NASM assembly and compiled as a DOS .com executable.
+The game runs smoothly in DOSBox with responsive paddle movement, brick collision detection, layered brick durability, and PC-speaker sound effects for all major events.
 
-Pure x86 NASM assembly
+This project showcases low-level game logic, real-time physics, keyboard interrupt handling, and text-mode rendering — all implemented from scratch in real-mode assembly.
+The repository includes full source code, build instructions, screenshots, and a gameplay demo.
+**
+🎮** Key Features**
+**Pure x86 NASM Assembly**
+
 Entire game written from scratch using real-mode assembly.
 
-DOS .com executable
-Lightweight, fast, and runs on DOSBox or real MS-DOS.
+No external libraries or frameworks.
 
-Smooth paddle movement
-Uses keyboard interrupt reading for responsive controls.
+**DOS .com Executable**
 
-Real ball physics
-Ball bounces off bricks, walls, and the paddle with directional changes.
+Extremely lightweight and fast.
 
-Brick durability system
+Runs on DOSBox or real MS-DOS hardware.
 
-Top row bricks require 2 hits
+Smooth Paddle Movement
 
-Remaining rows require 1 hit
+Responsive input using direct keyboard interrupt reads.
 
-PC-Speaker sound effects
+**Real Ball Physics**
+
+Ball bounces off walls, bricks, and the paddle.
+
+Direction changes based on collision angle.
+
+Brick Durability System
+
+Top row bricks require 2 hits.
+
+All other rows require 1 hit.
+
+**PC-Speaker Sound Effects**
+
 Distinct tones for:
 
 Brick destroyed
@@ -30,20 +45,39 @@ Wall bounce
 
 Paddle hit
 
-Ball lost
+Ball lost / game over
 
-Game won
+Game victory
 
-Retro text-mode graphics
-Draws paddle, ball, and bricks using simple ASCII-style characters.
+**Retro Text-Mode Graphics**
 
-Optimized for DOSBox
-Fast gameplay loop, clean timing, and accurate key handling.
+Paddle, ball, and bricks rendered using ASCII-style characters.
 
-Well-structured source
-Functions for drawing, sound, input, physics, and collision.
+Clean visual layout inside the DOS text screen.
 
-🕹️ How to Play
+**Optimized for DOSBox**
+
+Stable timing for consistent gameplay.
+
+Accurate keystroke reading.
+
+Efficient update loop.
+
+**Well-Structured Source Code**
+
+Organized into routines for:
+
+Drawing
+
+Input
+
+Physics
+
+Collision
+
+Sound
+
+🕹️** How to Play**
 Controls
 
 Left Arrow → Move paddle left
@@ -52,16 +86,16 @@ Right Arrow → Move paddle right
 
 ESC → Quit the game
 
-Objective
+**Objective**
 
-Break all the bricks without letting the ball fall below your paddle.
+Break all the bricks without letting the ball fall below the paddle.
 
-How Gameplay Works
+Gameplay Overview
 
-The ball launches automatically and begins moving across the screen.
+The ball launches automatically at the start.
 
-Hit the bricks with the ball to destroy them.
+Hit bricks to destroy them and clear the board.
 
-If you miss the ball and it goes below the paddle, the game ends.
+Missing the ball ends the game.
 
-When all bricks are removed, you win and a victory sound is played.
+Destroy all bricks to win — a victory sound is played.
