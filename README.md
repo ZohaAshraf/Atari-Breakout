@@ -63,7 +63,8 @@ Hit the bricks with the ball to destroy them.
 If you miss the ball and it goes below the paddle, the game ends.
 When all bricks are removed, you win and a victory sound is played.
 
- **GamePlay Demo:**                                                                
+ **GamePlay Demo:**   
+ 
 https://github.com/user-attachments/assets/0192aea9-27df-48da-b9cb-6bfba1c0de7f
 
 
