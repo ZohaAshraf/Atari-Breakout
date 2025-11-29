@@ -1,70 +1,90 @@
-                                                   # Atari-Breakout
-Atari Breakout recreated entirely in x86 NASM assembly and compiled as a DOS .com executable. The game runs smoothly inside DOSBox with full paddle movement, brick collision detection, layered brick durability, and PC-speaker sound effects for hits, wall bounces, life loss, and victory. This project demonstrates low-level game logic, input handling, real-time ball physics, and text-mode rendering in assembly. Includes full source code, build instructions, screenshots, and a gameplay demo video.
+_**Atari Breakout — x86 NASM Edition**_
 
-                                                  
- **Key Features:**
- 
-Pure x86 NASM assembly
-Entire game written from scratch using real-mode assembly.
+A complete recreation of Atari Breakout written entirely in 8086 NASM assembly, running as a 16-bit DOS .com executable.
+Features smooth paddle movement, accurate ball physics, layered brick durability, PC-speaker sound effects, and fully text-mode graphics.
 
-**DOS .com executable:**
-  
-1) Lightweight, fast, and runs on DOSBox or real MS-DOS.
-2) Smooth paddle movement
-3) Uses keyboard interrupt reading for responsive controls.
+_**Gameplay Demo**_
 
- **Real ball physics:**   
- 
-1) Ball bounces off bricks, walls, and the paddle with directional changes.
-
-**Brick durability system:**  
-
-1) Top row bricks require 2 hits
-2) Remaining rows require 1 hit
-
-
-**PC-Speaker sound effects:**  
-
-1) Distinct tones for:
-     Brick destroyed
-     Wall bounce
-     Paddle hit
-     Ball lost
-     Game won
-
- **Retro text-mode graphics:**
- 
-Draws paddle, ball, and bricks using simple ASCII-style characters.
-
- **Optimized for DOSBox:**  
- 
-Fast gameplay loop, clean timing, and accurate key handling.
-
-**Well-structured source:**   
-
-Functions for drawing, sound, input, physics, and collision.
-
-**How to Play**  
-
-_Controls:_
-
-Left Arrow   →  Move paddle left
-Right Arrow  →  Move paddle right
-ESC          →  Quit the game
-
-**Objective:**              
-
-Break all the bricks without letting the ball fall below your paddle.   
-
-**How Gameplay Works:**  
-
-The ball launches automatically and begins moving across the screen.
-Hit the bricks with the ball to destroy them.
-If you miss the ball and it goes below the paddle, the game ends.
-When all bricks are removed, you win and a victory sound is played.
-
- **GamePlay Demo:**   
- 
 https://github.com/user-attachments/assets/0192aea9-27df-48da-b9cb-6bfba1c0de7f
 
+_**Key Features**_
 
+_Pure x86 NASM Assembly_
+- Hand-written real-mode assembly
+- no external libraries
+- Runs directly in DOSBox
+
+_**Real Ball Physics**_
+- Wall bounce
+- paddle bounce
+- brick collision detection
+- Angle-changing movement
+
+ _**Brick Durability System**_
+- Top row → 2 hits
+- All other rows → 1 hit
+
+_**PC-Speaker Sound Effects**_
+_Distinct tones for:_
+- Brick hit
+- Paddle hit
+- Wall bounce
+- Ball lost
+- Win sound
+
+ _**Retro Text-Mode Graphics**_
+- Fast ASCII rendering
+- Smooth paddle animation
+
+ _**DOSBox Optimized**_
+- Stable timing
+- Responsive input
+
+ _**Dependencies**_
+- DOSBox
+- NASM assembler
+
+ _**Building From Source**_
+Clone the repository:
+
+      git clone --depth 1 https://github.com/Flodur871/Atari-Breakout
+Start DOSBox and mount your directory:
+
+    mount c c:/
+    cd c:/Atari-Breakout/src
+Compile using NASM:
+
+    nasm p.asm -f bin -o break.com
+That's it — no TASM, no TLINK required.
+
+_**Playing the Game**_
+From inside DOSBox, run:
+ 
+     test.com
+
+_**## Controls**_
+
+| Command                       | Keybind        |
+|-------------------------------|----------------|
+| Move Right                    | → (Right Arrow) |
+| Move Left                     | ← (Left Arrow)  |
+| Restart / Change Brick Colors | Space          |
+| Pause / Quit                  | Escape         |
+
+_**How to Play**_
+- The ball launches automatically
+- Hit bricks to destroy them
+- Missing the ball three times ends the game
+- Clear all bricks to win
+- Press Space to restart anytime
+
+ _**About the Project**_
+_This project demonstrates:_
+- BIOS keyboard input
+- PC-speaker tones
+- VGA text-mode rendering
+- Physics in pure assembly
+- Efficient low-level game logic
+
+ _**License**_
+MIT License
