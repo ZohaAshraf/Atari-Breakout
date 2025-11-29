@@ -10,15 +10,22 @@ https://github.com/user-attachments/assets/0192aea9-27df-48da-b9cb-6bfba1c0de7f
 _**Key Features**_
 
 _Pure x86 NASM Assembly_
-- Hand-written real-mode assembly
+- hand-written real-mode assembly
 - no external libraries
-- Runs directly in DOSBox
+- runs in DOSBox
+- pure .COM format (ORG 0100h)
+
+_**Menu & UI System**_
+- main menu (Play / Instructions / Exit)
+- instructions page
+- clean ASCII borders and text rendering
 
 _**Real Ball Physics**_
 - Wall bounce
-- paddle bounce
+- paddle bounce with angle zones
 - brick collision detection
-- Angle-changing movement
+- variable direction changes
+- frame-based movement timing
 
  _**Brick Durability System**_
 - Top row → 2 hits
@@ -29,12 +36,13 @@ _Distinct tones for:_
 - Brick hit
 - Paddle hit
 - Wall bounce
-- Ball lost
+- life lost
 - Win sound
 
  _**Retro Text-Mode Graphics**_
-- Fast ASCII rendering
-- Smooth paddle animation
+- fast memory-mapped VGA text rendering
+- smooth paddle animation
+- border and layout system
 
  _**DOSBox Optimized**_
 - Stable timing
@@ -68,17 +76,17 @@ _**## Controls**_
 |-------------------------------|----------------|
 | Move Right                    | → (Right Arrow) |
 | Move Left                     | ← (Left Arrow)  |
-| Restart / Change Brick Colors | Space          |
 | Pause / Quit                  | Escape         |
 
 _**How to Play**_
 - The ball launches automatically
 - Hit bricks to destroy them
-- Missing the ball three times ends the game
-- Clear all bricks to win
+- Missing the ball costs 1 life
+- Game over when lives = 0
 - Press Space to restart anytime
 
  _**About the Project**_
+ 
 _This project demonstrates:_
 - BIOS keyboard input
 - PC-speaker tones
@@ -87,4 +95,5 @@ _This project demonstrates:_
 - Efficient low-level game logic
 
  _**License**_
+ 
 MIT License
